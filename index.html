@@ -487,10 +487,27 @@ footer{
       <div class="eyebrow">Live Deployments</div>
       <h2 class="sec-title">Live <span>Projects</span></h2>
       <p class="live-intro">
-        Explore my two currently deployed portfolio projects: a full-stack AI GitHub PR review platform and a machine learning vulnerability severity classifier.
+        Explore my currently deployed portfolio projects: a multi-tenant AI web vulnerability scanner, a full-stack AI GitHub PR review platform, and a machine learning vulnerability severity classifier.
       </p>
     </div>
     <div class="proj-grid">
+      <div class="proj-card fi">
+        <div class="proj-badge">🛡️ Live · Security SaaS (DAST)</div>
+        <h3 class="proj-title">VulnScanner</h3>
+        <p class="proj-desc">
+          Multi-tenant AI web vulnerability scanner that crawls a target application and detects 20+ vulnerability classes (XSS, SQL injection, SSTI, path traversal, open redirect, and more) across passive and active checks, then generates AI-written executive reports and prioritised remediation plans — with a multi-layer SSRF guard and ownership verification for safe, authorised scanning.
+        </p>
+        <div class="proj-stack">
+          <span class="stag">FastAPI</span><span class="stag">httpx</span>
+          <span class="stag">OpenAI API</span><span class="stag">PostgreSQL</span>
+          <span class="stag">Docker</span><span class="stag">JWT</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://vulnscan-pl.duckdns.org" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
+          <a href="https://github.com/pradeep-1111/vulnscanner" target="_blank" rel="noopener noreferrer" class="pl">↗ Source Code</a>
+        </div>
+      </div>
+
       <div class="proj-card fi">
         <div class="proj-badge">⚡ Vercel · Full-Stack AI Platform</div>
         <h3 class="proj-title">AI Merge Guard</h3>
