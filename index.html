@@ -487,12 +487,12 @@ footer{
       <div class="eyebrow">Live Deployments</div>
       <h2 class="sec-title">Live <span>Projects</span></h2>
       <p class="live-intro">
-        Explore my currently deployed portfolio projects: a grounded RAG customer-service chatbot for a live business website, a multi-tenant AI web vulnerability scanner, a full-stack AI GitHub PR review platform, and a machine learning vulnerability severity classifier.
+        Explore my currently deployed portfolio projects: a grounded RAG customer-service chatbot for a live business website, a multi-tenant AI web vulnerability scanner, a full-stack AI GitHub PR review platform, and a transformer-based CVE severity triage tool built as my MSc dissertation.
       </p>
     </div>
     <div class="proj-grid">
       <div class="proj-card fi">
-        <div class="proj-badge">💬 Live · RAG AI for a Real Business</div>
+        <div class="proj-badge">💬 Live · J&amp;J Digital Solutions · Jul 2026</div>
         <h3 class="proj-title">Customer-Service RAG Chatbot</h3>
         <p class="proj-desc">
           Retrieval-augmented customer-service assistant embedded in a company website, answering queries grounded strictly in the site's own content. Two-stage HyDE retrieval, a four-layer output-safety stack (relevance gating, numeric grounding, coherence filtering, prompt-injection defences), and an escalation subsystem that turns unanswered queries into SQLite support tickets.
@@ -509,7 +509,7 @@ footer{
       </div>
 
       <div class="proj-card fi">
-        <div class="proj-badge">🛡️ Live · Security SaaS (DAST)</div>
+        <div class="proj-badge">🛡️ Live · J&amp;J Digital Solutions · May – Jun 2026</div>
         <h3 class="proj-title">VulnScanner</h3>
         <p class="proj-desc">
           Multi-tenant AI web vulnerability scanner that crawls a target application and detects 20+ vulnerability classes (XSS, SQL injection, SSTI, path traversal, open redirect, and more) across passive and active checks, then generates AI-written executive reports and prioritised remediation plans — with a multi-layer SSRF guard and ownership verification for safe, authorised scanning.
@@ -526,7 +526,7 @@ footer{
       </div>
 
       <div class="proj-card fi">
-        <div class="proj-badge">⚡ Vercel · Full-Stack AI Platform</div>
+        <div class="proj-badge">⚡ Live · J&amp;J Digital Solutions · Jan – Feb 2026</div>
         <h3 class="proj-title">AI Merge Guard</h3>
         <p class="proj-desc">
           AI-powered GitHub pull request review platform that detects merge risks, security issues, bugs, policy violations, and missing test coverage before code is merged.
@@ -544,18 +544,18 @@ footer{
       </div>
 
       <div class="proj-card fi">
-        <div class="proj-badge">🤖 Streamlit · ML App</div>
-        <h3 class="proj-title">ML Vulnerability Severity Classifier</h3>
+        <div class="proj-badge">🎓 Live · MSc Dissertation · University of Exeter</div>
+        <h3 class="proj-title">CVE Severity Triage — ML Classifier + RAG Explanations</h3>
         <p class="proj-desc">
-          Streamlit machine learning app that predicts CVE severity using a hierarchical classifier trained on 55,712 labelled NVD and CVE-CWE records, with confidence scoring, similarity search, and CSV export.
+          Fine-tuned SecureBERT for 4-class CVE severity classification over a ~280K-CVE leakage-free pipeline (0.68 macro-F1, beating a TF-IDF baseline), with a retrieval-augmented explanation layer over a 266K-CVE FAISS index using hybrid BM25 + dense search, calibrated confidence, and grounded CWE-based remediations for auditable triage.
         </p>
         <div class="proj-stack">
-          <span class="stag">Python</span><span class="stag">scikit-learn</span>
-          <span class="stag">TF-IDF</span><span class="stag">RAG</span>
-          <span class="stag">Streamlit</span><span class="stag">CVE Data</span>
+          <span class="stag">PyTorch</span><span class="stag">SecureBERT</span>
+          <span class="stag">FAISS</span><span class="stag">BM25</span>
+          <span class="stag">scikit-learn</span><span class="stag">Hugging Face</span>
         </div>
         <div class="proj-links">
-          <a href="https://vulnerability-severity-rag.streamlit.app" target="_blank" rel="noopener noreferrer" class="pl">↗ Live App</a>
+          <a href="https://huggingface.co/spaces/Pradeep-1111/cve-triage" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
         </div>
       </div>
     </div>
@@ -575,7 +575,7 @@ footer{
           I'm a <strong>Computer Science graduate</strong> from MITE Karnataka, currently pursuing an <strong>MSc in Business Analytics</strong> at the University of Exeter. My work sits at the intersection of AI, software engineering, and data — building tools that go beyond prototypes into production.
         </p>
         <p>
-          I've built full-stack AI applications using the <strong>OpenAI API</strong>, developed ML classifiers trained on 55,000+ records, and shipped a GitHub-integrated PR review platform that's live on Vercel. I work across the stack — Python backends, React frontends, REST APIs — with a strong focus on <strong>prompt engineering</strong> and reliable AI output.
+          I've built full-stack AI applications using the <strong>OpenAI API</strong>, fine-tuned transformer classifiers on 280K+ CVE records, and shipped a GitHub-integrated PR review platform that's live on Vercel. I work across the stack — Python backends, React frontends, REST APIs — with a strong focus on <strong>prompt engineering</strong> and reliable AI output.
         </p>
         <p>
           I'm looking for entry-level roles as an <strong>AI Engineer</strong>, <strong>ML Engineer</strong>, <strong>AI Product Engineer</strong>, or <strong>Prompt Engineer</strong> where I can contribute to teams building intelligent systems at scale.
@@ -593,7 +593,7 @@ footer{
           <div class="hi-icon">📊</div>
           <div>
             <div class="hi-title">Machine Learning</div>
-            <div class="hi-desc">scikit-learn · TF-IDF · Classification · 55k+ record datasets</div>
+            <div class="hi-desc">PyTorch · Transformers · FAISS · 280K+ record datasets</div>
           </div>
         </div>
         <div class="hi-card">
@@ -630,6 +630,10 @@ footer{
           <span class="tag hi">LLM Integration</span>
           <span class="tag hi">Prompt Engineering</span>
           <span class="tag hi">Machine Learning</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Transformers</span>
+          <span class="tag">FAISS</span>
+          <span class="tag">BM25</span>
           <span class="tag">scikit-learn</span>
           <span class="tag">TF-IDF</span>
           <span class="tag hi">RAG</span>
@@ -698,7 +702,7 @@ footer{
 
       <!-- 0 — CUSTOMER-SERVICE RAG CHATBOT (featured, full width) -->
       <div class="proj-card wide fi">
-        <div class="proj-badge">💬 Live · Grounded AI for a Real Business · Jul 2026</div>
+        <div class="proj-badge">💬 J&amp;J Digital Solutions · AI/ML Internship · Jul 2026</div>
         <div class="proj-body">
           <div class="proj-body-text">
             <h3 class="proj-title">Customer-Service RAG Chatbot — Grounded AI Assistant for a Live Business Website</h3>
@@ -734,7 +738,7 @@ footer{
 
       <!-- 1 — AI MERGE GUARD (featured, full width) -->
       <div class="proj-card wide fi">
-        <div class="proj-badge">⚡ Live · Full-Stack AI Platform</div>
+        <div class="proj-badge">⚡ J&amp;J Digital Solutions · AI/ML Internship · Jan – Feb 2026</div>
         <div class="proj-body">
           <div class="proj-body-text">
             <h3 class="proj-title">AI Merge Guard — GitHub PR Review Platform</h3>
@@ -770,20 +774,39 @@ footer{
         </div>
       </div>
 
-      <!-- 2 — ML CLASSIFIER -->
+      <!-- 2 — VULNSCANNER (J&J DIGITAL SOLUTIONS) -->
       <div class="proj-card fi">
-        <div class="proj-badge">🤖 ML Model · Live App</div>
-        <h3 class="proj-title">ML Vulnerability Severity Classifier</h3>
+        <div class="proj-badge">🛡️ J&amp;J Digital Solutions · AI/ML Internship · May – Jun 2026</div>
+        <h3 class="proj-title">VulnScanner — AI-Powered Web Vulnerability Scanner (DAST SaaS)</h3>
         <p class="proj-desc">
-          Hierarchical 3-stage scikit-learn classifier trained on 55,712 NVD &amp; CVE records. Predicts CVE severity (Critical / High / Medium / Low) with <strong style="color:var(--text);">71.2% accuracy &amp; 0.716 weighted F1</strong>. Combines TF-IDF (60k features) over CVE descriptions with one-hot CVSS metrics, deployed as a Streamlit app with RAG similarity search, batch prediction, and CSV export.
+          Full-stack, multi-tenant DAST platform with an asynchronous crawl-and-scan engine (FastAPI, httpx) — bounded depth, per-host throttling and concurrency control — running passive checks and benign active probes for reflected XSS, SQL injection, OS command injection, path traversal/LFI, SSTI, open redirect and CRLF injection. A multi-layer SSRF guard validates targets resolve only to public IPs at registration, scan start and every redirect hop, plus a /.well-known ownership-verification gate for authorised testing. A cost-optimised AI reporting pipeline sends only structured findings (never raw response bodies) to the OpenAI API and caches remediation per check type, driving repeat-scan LLM cost to near-zero.
         </p>
         <div class="proj-stack">
-          <span class="stag">Python</span><span class="stag">scikit-learn</span>
-          <span class="stag">TF-IDF</span><span class="stag">RAG</span>
-          <span class="stag">Streamlit</span><span class="stag">NVD / CVE Data</span>
+          <span class="stag">Python</span><span class="stag">FastAPI</span>
+          <span class="stag">httpx</span><span class="stag">PostgreSQL</span>
+          <span class="stag">OpenAI API</span><span class="stag">JWT</span>
+          <span class="stag">Docker Compose</span><span class="stag">Oracle Cloud (OCI)</span>
         </div>
         <div class="proj-links">
-          <a href="https://vulnerability-severity-rag.streamlit.app" target="_blank" rel="noopener noreferrer" class="pl">↗ Live App</a>
+          <a href="https://vulnscan-pl.duckdns.org" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
+          <a href="https://github.com/pradeep-1111/vulnscanner" target="_blank" rel="noopener noreferrer" class="pl">↗ Source Code</a>
+        </div>
+      </div>
+
+      <!-- 3 — CVE SEVERITY TRIAGE (MSc DISSERTATION) -->
+      <div class="proj-card fi">
+        <div class="proj-badge">🎓 MSc Dissertation · University of Exeter · Apr – Jul 2026</div>
+        <h3 class="proj-title">CVE Severity Triage — ML Classifier + Retrieval-Augmented Explanations</h3>
+        <p class="proj-desc">
+          Reproducible pipeline over a ~280K-CVE, ~13:1 class-imbalanced dataset with leakage-free, description-only features and group-stratified splits. Fine-tuned <strong style="color:var(--text);">SecureBERT (~125M params)</strong> for 4-class ordinal severity with inverse-frequency class weighting — <strong style="color:var(--text);">0.68 macro-F1</strong> with balanced per-class recall, beating a TF-IDF + Logistic Regression baseline (0.63). Retrieval-augmented explanation layer over a 266K-CVE FAISS index (hybrid BM25 + dense search via reciprocal rank fusion), temperature-scaled confidence calibration (ECE 0.049 → 0.015), and a curated CWE knowledge base for grounded remediations — turning each prediction into an auditable "why and what to do" for security analysts.
+        </p>
+        <div class="proj-stack">
+          <span class="stag">Python</span><span class="stag">PyTorch</span>
+          <span class="stag">Transformers (SecureBERT)</span><span class="stag">FAISS</span>
+          <span class="stag">BM25</span><span class="stag">scikit-learn</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://huggingface.co/spaces/Pradeep-1111/cve-triage" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
         </div>
       </div>
 
