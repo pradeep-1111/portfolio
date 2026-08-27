@@ -527,19 +527,20 @@ footer{
 
       <div class="proj-card fi">
         <div class="proj-badge">⚡ Live · J&amp;J Digital Solutions · Jan – Feb 2026</div>
-        <h3 class="proj-title">AI Merge Guard</h3>
+        <h3 class="proj-title">AI Merge Guard — Agentic PR Reviewer</h3>
         <p class="proj-desc">
-          AI-powered GitHub pull request review platform that detects merge risks, security issues, bugs, policy violations, and missing test coverage before code is merged.
+          Agentic pull-request reviewer that plans and runs the right analysis tools for each PR, then posts a risk-scored verdict, inline suggested fixes, and a pass/fail GitHub check run — architected as a LangGraph StateGraph driving 11 analysis tools served over the Model Context Protocol (FastMCP). A swappable brain uses OpenAI function-calling when a key is present and a deterministic heuristic planner otherwise, so it reviews PRs with zero external keys or network. The analyzer suite spans a Python AST security scan, Semgrep (with a built-in fallback), changed-line Ruff linting, a repo policy engine, cross-analyzer de-duplication, and a severity-weighted 0–100 risk score — hardened with Prometheus metrics, structured logging, bearer auth, rate limiting, idempotent reviews, and SQLAlchemy persistence (SQLite locally, Postgres in prod). Ships with a React/TypeScript analytics dashboard, a Docker Compose stack, and CI with 37 passing tests; the MCP server also runs standalone in any MCP host (Claude Desktop, Cursor).
         </p>
         <div class="proj-stack">
-          <span class="stag">FastAPI</span><span class="stag">React</span>
-          <span class="stag">TypeScript</span><span class="stag">OpenAI API</span>
-          <span class="stag">GitHub API</span><span class="stag">Vercel</span>
+          <span class="stag">LangGraph</span><span class="stag">FastMCP</span>
+          <span class="stag">FastAPI</span><span class="stag">OpenAI API</span>
+          <span class="stag">Semgrep</span><span class="stag">Prometheus</span>
+          <span class="stag">React / TypeScript</span><span class="stag">Docker</span>
         </div>
         <div class="proj-links">
-          <a href="https://ai-merge-guard.vercel.app" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
-          <a href="https://github.com/pradeep-1111/ai-merge-guard" target="_blank" rel="noopener noreferrer" class="pl">↗ Source Code</a>
-          <a href="https://github.com/pradeep-1111/ai-merge-guard-check" target="_blank" rel="noopener noreferrer" class="pl">↗ Demo Repo</a>
+          <a href="https://ai-merge-guard-agentic.vercel.app" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
+          <a href="https://github.com/pradeep-1111/ai-merge-guard-agentic" target="_blank" rel="noopener noreferrer" class="pl">↗ Source Code</a>
+          <a href="https://github.com/pradeep-1111/ai-merge-guard-check" target="_blank" rel="noopener noreferrer" class="pl">↗ Test Repo</a>
         </div>
       </div>
 
