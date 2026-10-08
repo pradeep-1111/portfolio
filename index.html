@@ -241,6 +241,7 @@ section{position:relative;z-index:1;}
   border-radius:10px;padding:16px;
   font-family:'JetBrains Mono',monospace;font-size:.62rem;
   line-height:1.8;color:rgba(0,229,255,.45);
+  white-space:pre;overflow-x:auto;
 }
 .proj-code-block .kw{color:var(--purple);}
 .proj-code-block .str{color:var(--amber);}
@@ -451,7 +452,7 @@ footer{
   <div class="hero-l">
     <div class="hero-badge">
       <div class="dot"></div>
-      Open to AI · ML · Prompt Engineer Roles · Exeter, UK
+      Open to AI · ML · Prompt Engineer Roles · London, UK
     </div>
     <h1 class="hero-name">
       <span class="n1">Pradeep</span>
@@ -459,7 +460,7 @@ footer{
     </h1>
     <div class="hero-role"><span id="typed"></span><span class="blink">_</span></div>
     <p class="hero-summary">
-      MSc Business Analytics student at the University of Exeter building production-ready AI tools — from LLM-powered GitHub PR reviewers to ML vulnerability classifiers. I bridge machine learning, prompt engineering, and full-stack development to create systems that work in the real world.
+      AI engineer specialising in LLM-powered applications, agentic AI systems and AI-driven security tooling — building systems that hold up in production through grounded RAG, deterministic output validation, prompt-injection defence and multi-tool agent orchestration, not just prompting. AI/ML Engineer at J&amp;J Digital Solutions (UK) and MSc Business Analytics candidate at the University of Exeter.
     </p>
     <div class="hero-btns">
       <a href="#live-projects" class="btn-p">⚡ Production Deployments</a>
@@ -487,12 +488,12 @@ footer{
       <div class="eyebrow">Shipped to Production</div>
       <h2 class="sec-title">Production <span>Deployments</span></h2>
       <p class="live-intro">
-        Production AI platforms designed and shipped end-to-end during my AI/ML Engineering internship at J&amp;J Digital Solutions — a grounded RAG customer-service chatbot embedded in a live business website, a multi-tenant AI web vulnerability scanner, and a full-stack AI GitHub PR review platform — plus the transformer-based CVE severity triage tool from my MSc dissertation. All four are live and clickable.
+        Three production AI platforms designed and shipped end to end as an AI/ML Engineer at J&amp;J Digital Solutions — a grounded RAG customer-service chatbot embedded in a live business website, a multi-tenant AI web vulnerability scanner, and an agentic GitHub PR reviewer built on LangGraph and the Model Context Protocol — plus the transformer-based CVE severity triage tool from my MSc dissertation and Contract Triage, an independent guardrailed RAG contract-review system. All five are live and clickable.
       </p>
     </div>
     <div class="proj-grid">
       <div class="proj-card fi">
-        <div class="proj-badge">💬 Live · J&amp;J Digital Solutions · Jul 2026</div>
+        <div class="proj-badge">💬 Live · J&amp;J Digital Solutions · May – Sep 2026</div>
         <h3 class="proj-title">Customer-Service RAG Chatbot</h3>
         <p class="proj-desc">
           Retrieval-augmented customer-service assistant embedded in a company website, answering queries grounded strictly in the site's own content. Two-stage HyDE retrieval, a four-layer output-safety stack (relevance gating, numeric grounding, coherence filtering, prompt-injection defences), and an escalation subsystem that turns unanswered queries into SQLite support tickets.
@@ -509,7 +510,7 @@ footer{
       </div>
 
       <div class="proj-card fi">
-        <div class="proj-badge">🛡️ Live · J&amp;J Digital Solutions · May – Jun 2026</div>
+        <div class="proj-badge">🛡️ Live · J&amp;J Digital Solutions · Jan – Apr 2026</div>
         <h3 class="proj-title">VulnScanner</h3>
         <p class="proj-desc">
           Multi-tenant AI web vulnerability scanner that crawls a target application and detects 20+ vulnerability classes (XSS, SQL injection, SSTI, path traversal, open redirect, and more) across passive and active checks, then generates AI-written executive reports and prioritised remediation plans — with a multi-layer SSRF guard and ownership verification for safe, authorised scanning.
@@ -517,7 +518,7 @@ footer{
         <div class="proj-stack">
           <span class="stag">FastAPI</span><span class="stag">httpx</span>
           <span class="stag">OpenAI API</span><span class="stag">PostgreSQL</span>
-          <span class="stag">Docker</span><span class="stag">JWT</span>
+          <span class="stag">Docker Compose</span><span class="stag">Oracle Cloud (OCI)</span>
         </div>
         <div class="proj-links">
           <a href="https://vulnscan-pl.duckdns.org" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
@@ -526,10 +527,10 @@ footer{
       </div>
 
       <div class="proj-card fi">
-        <div class="proj-badge">⚡ Live · J&amp;J Digital Solutions · Jan – Feb 2026</div>
+        <div class="proj-badge">⚡ Live · J&amp;J Digital Solutions · Oct – Dec 2025</div>
         <h3 class="proj-title">AI Merge Guard — Agentic PR Reviewer</h3>
         <p class="proj-desc">
-          Agentic pull-request reviewer that plans and runs the right analysis tools for each PR, then posts a risk-scored verdict, inline suggested fixes, and a pass/fail GitHub check run — architected as a LangGraph StateGraph driving 11 analysis tools served over the Model Context Protocol (FastMCP). A swappable brain uses OpenAI function-calling when a key is present and a deterministic heuristic planner otherwise, so it reviews PRs with zero external keys or network. The analyzer suite spans a Python AST security scan, Semgrep (with a built-in fallback), changed-line Ruff linting, a repo policy engine, cross-analyzer de-duplication, and a severity-weighted 0–100 risk score — hardened with Prometheus metrics, structured logging, bearer auth, rate limiting, idempotent reviews, and SQLAlchemy persistence (SQLite locally, Postgres in prod). Ships with a React/TypeScript analytics dashboard, a Docker Compose stack, and CI with 37 passing tests; the MCP server also runs standalone in any MCP host (Claude Desktop, Cursor).
+          Agentic pull-request reviewer that plans and runs the right analysis tools for each PR, then posts a risk-scored verdict, inline suggested fixes and a pass/fail GitHub check run — a LangGraph StateGraph driving 11 analysis tools over the Model Context Protocol (FastMCP). Three interchangeable review engines sit behind one interface, using OpenAI function-calling when a key is present and a deterministic heuristic planner otherwise, so it reviews PRs with zero external keys or network. Hardened with Prometheus metrics, bearer auth, rate limiting and idempotent reviews; CI runs 37 passing tests.
         </p>
         <div class="proj-stack">
           <span class="stag">LangGraph</span><span class="stag">FastMCP</span>
@@ -545,18 +546,35 @@ footer{
       </div>
 
       <div class="proj-card fi">
-        <div class="proj-badge">🎓 Live · MSc Dissertation · University of Exeter</div>
+        <div class="proj-badge">🎓 Live · MSc Dissertation · Apr – Jul 2026</div>
         <h3 class="proj-title">CVE Severity Triage — ML Classifier + RAG Explanations</h3>
         <p class="proj-desc">
-          Fine-tuned SecureBERT for 4-class CVE severity classification over a ~280K-CVE leakage-free pipeline (0.68 macro-F1, beating a TF-IDF baseline), with a retrieval-augmented explanation layer over a 266K-CVE FAISS index using hybrid BM25 + dense search, calibrated confidence, and grounded CWE-based remediations for auditable triage.
+          Fine-tuned SecureBERT for 4-class CVE severity classification over a ~280K-CVE leakage-free pipeline (0.68 macro-F1, beating a TF-IDF baseline at 0.63), with a retrieval-augmented explanation layer over a 266K-CVE FAISS index using hybrid BM25 + dense search, calibrated confidence, and grounded CWE-based remediations for auditable triage.
         </p>
         <div class="proj-stack">
           <span class="stag">PyTorch</span><span class="stag">SecureBERT</span>
           <span class="stag">FAISS</span><span class="stag">BM25</span>
-          <span class="stag">scikit-learn</span><span class="stag">Hugging Face</span>
+          <span class="stag">scikit-learn</span><span class="stag">Hugging Face Spaces</span>
         </div>
         <div class="proj-links">
           <a href="https://huggingface.co/spaces/Pradeep-1111/cve-triage" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
+        </div>
+      </div>
+
+      <div class="proj-card fi" style="grid-column:1/-1;">
+        <div class="proj-badge">⚖️ Live · Independent Project · Legal-Tech AI · Aug 2026</div>
+        <h3 class="proj-title">Contract Triage — Guardrailed RAG Contract Review</h3>
+        <p class="proj-desc">
+          LLM contract-review system that triages an in-house legal team's queue into GREEN (sign), AMBER (amend, redlines pre-drafted) or RED (human review) against a 15-position, legal-owned playbook — deterministic rules settle checkable terms, the LLM reads only what rules can't, and a human signs every contract. HyDE retrieval lifts recall@3 on paraphrased clauses from 75% to 88%, a faithfulness guardrail drops ungrounded findings, prompt-injection attempts force a RED verdict, and tiered model routing with caching cuts estimated LLM spend by ~78%.
+        </p>
+        <div class="proj-stack">
+          <span class="stag">FastAPI</span><span class="stag">FAISS</span>
+          <span class="stag">RAG + HyDE</span><span class="stag">OpenAI / Anthropic / OpenRouter</span>
+          <span class="stag">Docker</span><span class="stag">Render</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://contract-triage.onrender.com" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
+          <a href="https://github.com/pradeep-1111/contract-triage" target="_blank" rel="noopener noreferrer" class="pl">↗ Source Code</a>
         </div>
       </div>
     </div>
@@ -573,13 +591,16 @@ footer{
     <div class="about-grid">
       <div class="about-text fi">
         <p>
-          I'm a <strong>Computer Science graduate</strong> from MITE Karnataka, currently pursuing an <strong>MSc in Business Analytics</strong> at the University of Exeter. My work sits at the intersection of AI, software engineering, and data — building tools that go beyond prototypes into production.
+          I'm an <strong>AI engineer</strong> specialising in LLM-powered applications, agentic AI systems and AI-driven security tooling. I hold a <strong>B.E. in Computer Science &amp; Engineering</strong> from MITE, Karnataka, and I'm an <strong>MSc Business Analytics</strong> candidate at the University of Exeter (Sep 2025 – Sep 2026).
         </p>
         <p>
-          I've built full-stack AI applications using the <strong>OpenAI API</strong>, fine-tuned transformer classifiers on 280K+ CVE records, and shipped a GitHub-integrated PR review platform that's live on Vercel. I work across the stack — Python backends, React frontends, REST APIs — with a strong focus on <strong>prompt engineering</strong> and reliable AI output.
+          Since October 2025 I've worked as an <strong>AI/ML Engineer at J&amp;J Digital Solutions</strong> (UK, remote), where I've designed and shipped three production AI platforms end to end — a grounded customer-facing assistant, an agentic GitHub PR reviewer (LangGraph + Model Context Protocol) and AI-driven security tooling — each with a live demo and open-source code, cutting time spent on security assessments and PR reviews by around 85%.
         </p>
         <p>
-          I'm looking for entry-level roles as an <strong>AI Engineer</strong>, <strong>ML Engineer</strong>, <strong>AI Product Engineer</strong>, or <strong>Prompt Engineer</strong> where I can contribute to teams building intelligent systems at scale.
+          I build systems that hold up in production, not just prompts: <strong>grounded retrieval-augmented generation</strong>, deterministic output validation, prompt-injection defence, multi-tool agent orchestration and cost control — including an AI reporting pipeline that brings repeat-scan LLM cost to near zero through per-check caching.
+        </p>
+        <p>
+          I'm looking for roles as an <strong>AI Engineer</strong>, <strong>ML Engineer</strong>, <strong>AI Product Engineer</strong> or <strong>Prompt Engineer</strong> where I can contribute to teams building intelligent systems at scale.
         </p>
       </div>
       <div class="about-highlights fi">
@@ -587,28 +608,42 @@ footer{
           <div class="hi-icon">🤖</div>
           <div>
             <div class="hi-title">AI / LLM Engineering</div>
-            <div class="hi-desc">OpenAI API · Prompt Engineering · RAG · AI Output Validation</div>
+            <div class="hi-desc">OpenAI API · RAG · HyDE · Output Grounding · Prompt-Injection Defence</div>
+          </div>
+        </div>
+        <div class="hi-card">
+          <div class="hi-icon">🧩</div>
+          <div>
+            <div class="hi-title">Agentic AI &amp; Orchestration</div>
+            <div class="hi-desc">LangGraph · ReAct Loops · MCP / FastMCP · Function Calling</div>
+          </div>
+        </div>
+        <div class="hi-card">
+          <div class="hi-icon">🛡️</div>
+          <div>
+            <div class="hi-title">AI Security</div>
+            <div class="hi-desc">Semgrep · DAST · SSRF Defence · CVE/CWE Classification</div>
           </div>
         </div>
         <div class="hi-card">
           <div class="hi-icon">📊</div>
           <div>
-            <div class="hi-title">Machine Learning</div>
-            <div class="hi-desc">PyTorch · Transformers · FAISS · 280K+ record datasets</div>
+            <div class="hi-title">Machine Learning &amp; Retrieval</div>
+            <div class="hi-desc">PyTorch · SecureBERT Fine-tuning · FAISS · BM25 + Dense Search</div>
           </div>
         </div>
         <div class="hi-card">
           <div class="hi-icon">⚙️</div>
           <div>
-            <div class="hi-title">Full-Stack Development</div>
-            <div class="hi-desc">Python · FastAPI · React · TypeScript · Flask · Streamlit</div>
+            <div class="hi-title">Full-Stack &amp; Production</div>
+            <div class="hi-desc">Python · FastAPI · Flask · React · TypeScript · Docker</div>
           </div>
         </div>
         <div class="hi-card">
           <div class="hi-icon">🎓</div>
           <div>
             <div class="hi-title">MSc Business Analytics</div>
-            <div class="hi-desc">University of Exeter · 2025–Present · Published Researcher</div>
+            <div class="hi-desc">University of Exeter · Sep 2025 – Sep 2026 · Published Researcher</div>
           </div>
         </div>
       </div>
@@ -625,67 +660,120 @@ footer{
     </div>
     <div class="skills-grid">
       <div class="sk-cat fi">
-        <div class="sk-cat-title">AI · ML · Analytics</div>
+        <div class="sk-cat-title">AI &amp; LLM</div>
         <div class="tags">
-          <span class="tag hi">OpenAI API</span>
-          <span class="tag hi">LLM Integration</span>
+          <span class="tag hi">Large Language Models</span>
           <span class="tag hi">Prompt Engineering</span>
-          <span class="tag hi">Machine Learning</span>
-          <span class="tag">PyTorch</span>
-          <span class="tag">Transformers</span>
-          <span class="tag">FAISS</span>
-          <span class="tag">BM25</span>
-          <span class="tag">scikit-learn</span>
-          <span class="tag">TF-IDF</span>
-          <span class="tag hi">RAG</span>
-          <span class="tag">ChromaDB</span>
-          <span class="tag">sentence-transformers</span>
+          <span class="tag hi">OpenAI API</span>
           <span class="tag">OpenRouter</span>
-          <span class="tag">AI Code Review</span>
-          <span class="tag">Data Analysis</span>
-          <span class="tag">Business Analytics</span>
+          <span class="tag hi">Retrieval-Augmented Generation (RAG)</span>
+          <span class="tag">HyDE Retrieval</span>
+          <span class="tag">Transformer Fine-tuning (SecureBERT)</span>
           <span class="tag">NLP</span>
+          <span class="tag">AI Output Validation &amp; Grounding</span>
+          <span class="tag hi">Prompt-Injection Defence</span>
         </div>
       </div>
       <div class="sk-cat fi">
-        <div class="sk-cat-title">Languages &amp; Frameworks</div>
+        <div class="sk-cat-title">Agentic AI &amp; Orchestration</div>
         <div class="tags">
-          <span class="tag hi">Python</span>
-          <span class="tag hi">TypeScript</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">C</span>
-          <span class="tag hi">FastAPI</span>
-          <span class="tag hi">React</span>
-          <span class="tag">Flask</span>
-          <span class="tag">Streamlit</span>
-          <span class="tag">HTML / CSS</span>
-          <span class="tag">Bootstrap 5</span>
+          <span class="tag hi">LangGraph</span>
+          <span class="tag">StateGraph Orchestration</span>
+          <span class="tag">ReAct Agent Loops</span>
+          <span class="tag">Multi-tool Planning &amp; Execution</span>
+          <span class="tag hi">OpenAI Function-Calling / Tool Use</span>
+          <span class="tag hi">Model Context Protocol (MCP)</span>
+          <span class="tag">FastMCP</span>
         </div>
       </div>
       <div class="sk-cat fi">
-        <div class="sk-cat-title">Databases &amp; Infrastructure</div>
+        <div class="sk-cat-title">ML &amp; Retrieval</div>
         <div class="tags">
-          <span class="tag">SQL · SQLite</span>
-          <span class="tag">MongoDB Atlas</span>
-          <span class="tag">NoSQL</span>
-          <span class="tag">Redis</span>
-          <span class="tag">REST APIs</span>
-          <span class="tag">Vercel</span>
-          <span class="tag">Google Cloud Run</span>
-          <span class="tag">CRUD Operations</span>
+          <span class="tag hi">PyTorch</span>
+          <span class="tag hi">Hugging Face Transformers</span>
+          <span class="tag">sentence-transformers (MiniLM)</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag hi">FAISS</span>
+          <span class="tag">ChromaDB</span>
+          <span class="tag">Hybrid Retrieval (BM25 + Dense)</span>
+          <span class="tag">Semantic / Vector Search</span>
+          <span class="tag">TF-IDF</span>
+          <span class="tag">Feature Engineering</span>
+          <span class="tag">Confidence Calibration</span>
+          <span class="tag">Class-Imbalance Handling</span>
         </div>
       </div>
       <div class="sk-cat fi">
-        <div class="sk-cat-title">DevOps &amp; Tooling</div>
+        <div class="sk-cat-title">AI Security</div>
         <div class="tags">
-          <span class="tag hi">GitHub API</span>
-          <span class="tag hi">Webhooks</span>
-          <span class="tag hi">Semgrep</span>
+          <span class="tag hi">Automated Code Review</span>
+          <span class="tag">Semgrep</span>
           <span class="tag">Ruff</span>
           <span class="tag">Python AST</span>
+          <span class="tag hi">DAST &amp; Web Vulnerability Scanning</span>
+          <span class="tag">OWASP-class Checks</span>
+          <span class="tag">XSS</span>
+          <span class="tag">SQLi</span>
+          <span class="tag">SSTI</span>
+          <span class="tag">Path Traversal</span>
+          <span class="tag">Open Redirect</span>
+          <span class="tag">CRLF</span>
+          <span class="tag hi">SSRF Defence</span>
+          <span class="tag">CVE/CWE Severity Classification</span>
+        </div>
+      </div>
+      <div class="sk-cat fi">
+        <div class="sk-cat-title">Production Engineering &amp; Observability</div>
+        <div class="tags">
+          <span class="tag hi">Prometheus Metrics</span>
+          <span class="tag">Structured Logging &amp; Correlation IDs</span>
+          <span class="tag">Bearer-token Auth</span>
+          <span class="tag">Rate Limiting</span>
+          <span class="tag">API Retry / Backoff</span>
+          <span class="tag">Idempotent Operations</span>
+          <span class="tag hi">Automated Testing (pytest)</span>
+          <span class="tag">CI/CD</span>
+        </div>
+      </div>
+      <div class="sk-cat fi">
+        <div class="sk-cat-title">Languages</div>
+        <div class="tags">
+          <span class="tag hi">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag hi">TypeScript</span>
+          <span class="tag">C</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+      <div class="sk-cat fi">
+        <div class="sk-cat-title">Frameworks &amp; Tools</div>
+        <div class="tags">
+          <span class="tag hi">FastAPI</span>
+          <span class="tag hi">Flask</span>
+          <span class="tag hi">React</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">GitHub API &amp; Webhooks</span>
+          <span class="tag">httpx</span>
+          <span class="tag">BeautifulSoup</span>
+          <span class="tag">SQLAlchemy</span>
+          <span class="tag">JWT</span>
+          <span class="tag">bcrypt</span>
+        </div>
+      </div>
+      <div class="sk-cat fi">
+        <div class="sk-cat-title">Data &amp; Infrastructure</div>
+        <div class="tags">
+          <span class="tag hi">PostgreSQL</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Redis</span>
+          <span class="tag hi">Docker &amp; Docker Compose</span>
+          <span class="tag">Google Cloud Run</span>
+          <span class="tag">Oracle Cloud (OCI)</span>
+          <span class="tag">Hugging Face Spaces &amp; Hub</span>
+          <span class="tag">Vercel</span>
           <span class="tag">Git / GitHub</span>
-          <span class="tag">Async Jobs</span>
-          <span class="tag">CI Workflows</span>
         </div>
       </div>
     </div>
@@ -701,18 +789,18 @@ footer{
     </div>
     <div class="proj-grid">
 
-      <!-- 0 — CUSTOMER-SERVICE RAG CHATBOT (featured, full width) -->
+      <!-- 1 — CUSTOMER-SERVICE RAG CHATBOT (featured, full width) -->
       <div class="proj-card wide fi">
-        <div class="proj-badge">💬 J&amp;J Digital Solutions · AI/ML Internship · Jul 2026</div>
+        <div class="proj-badge">💬 J&amp;J Digital Solutions · AI/ML Engineer · May – Sep 2026</div>
         <div class="proj-body">
           <div class="proj-body-text">
             <h3 class="proj-title">Customer-Service RAG Chatbot — Grounded AI Assistant for a Live Business Website</h3>
             <p class="proj-desc">
-              Retrieval-augmented customer-service assistant embedded in a company website, answering queries grounded in the site's own content via a model-agnostic LLM gateway (OpenRouter). A two-stage HyDE pipeline uses high-temperature hypothetical answers purely as search queries — never shown to users — fixing phrasing-dependent retrieval failures found through score-instrumented logs. A four-layer output-safety stack combines pre-LLM relevance gating, deterministic numeric grounding (no figure published unless present in retrieved context), coherence filtering against model degeneration, and prompt-injection defences with XSS-safe allowlisted link rendering. Every unanswered query becomes an SQLite support ticket with in-chat contact capture — turning bot failures into a lead-capture channel and a content roadmap — delivered with handover docs to the company's GitHub organisation.
+              Retrieval-augmented customer-service assistant embedded in the company website (Flask, ChromaDB, MiniLM sentence-transformer embeddings), answering customer queries grounded in the site's own content via a model-agnostic LLM gateway (OpenRouter). A two-stage HyDE pipeline uses high-temperature hypothetical answers solely as search queries — never shown to users — resolving phrasing-dependent retrieval failures found through score-instrumented logs. A four-layer output-safety stack combines pre-LLM relevance gating, deterministic numeric grounding (no figure published unless present in retrieved context), coherence filtering against model degeneration, and prompt-injection defences (input sanitisation, data-tagged context, XSS-safe allowlisted link rendering). Every unanswered query becomes an SQLite support ticket with in-chat customer contact capture — turning bot failures into a lead-capture channel and content roadmap — delivered with handover documentation to the company's GitHub organisation.
             </p>
             <div class="proj-stack">
               <span class="stag">Python</span><span class="stag">Flask</span>
-              <span class="stag">ChromaDB</span><span class="stag">sentence-transformers</span>
+              <span class="stag">ChromaDB</span><span class="stag">sentence-transformers (MiniLM)</span>
               <span class="stag">OpenRouter</span><span class="stag">HyDE Retrieval</span>
               <span class="stag">SQLite</span><span class="stag">Google Cloud Run</span>
             </div>
@@ -721,8 +809,7 @@ footer{
               <a href="https://github.com/J-J-Digital-Solutions/website-ai-chatbot" target="_blank" rel="noopener noreferrer" class="pl">↗ Source Code</a>
             </div>
           </div>
-          <div class="proj-code-block">
-<span class="cm"># HyDE retrieval + grounded answer</span>
+          <div class="proj-code-block"><span class="cm"># HyDE retrieval + grounded answer</span>
 <span class="kw">def</span> <span class="fn">answer</span>(query):
   hyde = <span class="fn">llm</span>(query, temp=<span class="str">1.0</span>)
   docs = <span class="fn">chroma_search</span>(hyde)
@@ -737,56 +824,58 @@ footer{
         </div>
       </div>
 
-      <!-- 1 — AI MERGE GUARD (featured, full width) -->
+      <!-- 2 — AI MERGE GUARD AGENTIC (featured, full width) -->
       <div class="proj-card wide fi">
-        <div class="proj-badge">⚡ J&amp;J Digital Solutions · AI/ML Internship · Jan – Feb 2026</div>
+        <div class="proj-badge">⚡ J&amp;J Digital Solutions · AI/ML Engineer · Oct – Dec 2025</div>
         <div class="proj-body">
           <div class="proj-body-text">
-            <h3 class="proj-title">AI Merge Guard — GitHub PR Review Platform</h3>
+            <h3 class="proj-title">AI Merge Guard — Agentic GitHub PR Review Platform</h3>
             <p class="proj-desc">
-              Production-grade AI platform that integrates into GitHub's review workflow via webhooks. Detects merge risks, security vulnerabilities, missing test coverage, and policy violations by combining LLM analysis with Semgrep, Ruff, and Python AST checks. Ships a React/TypeScript dashboard with severity ratings, inline PR comments, and AI-generated quick-fix suggestions.
+              Agentic pull-request reviewer that plans and runs the right analysis tools for a PR, then posts a risk-scored verdict, inline suggested fixes and a pass/fail GitHub check run — a LangGraph StateGraph driving 11 analysis tools over the Model Context Protocol (FastMCP). Three interchangeable review engines (LangGraph, a hand-rolled ReAct loop and a legacy pipeline) sit behind one interface, using OpenAI function-calling when a key is present and a deterministic heuristic planner otherwise — reviewing PRs with zero external keys or network. The analyzer suite covers a Python AST security scan, Semgrep with a built-in fallback scanner, Ruff linting scoped to changed lines, a repo policy engine, cross-analyzer finding de-duplication and a severity-weighted 0–100 risk score. Hardened for production with Prometheus metrics, structured logging and correlation IDs, bearer auth, rate limiting, GitHub-API retry/backoff, idempotent reviews and SQLAlchemy persistence (SQLite locally, Postgres in prod). Ships a React/TypeScript analytics dashboard, a full Docker Compose stack and CI (ruff + pytest + frontend build) with 37 passing tests; the MCP server also runs standalone in any MCP host (Claude Desktop, Cursor).
             </p>
             <div class="proj-stack">
-              <span class="stag">Python</span><span class="stag">FastAPI</span>
-              <span class="stag">OpenAI API</span><span class="stag">React</span>
-              <span class="stag">TypeScript</span><span class="stag">GitHub API</span>
-              <span class="stag">Semgrep</span><span class="stag">SQLite</span>
-              <span class="stag">Webhooks</span><span class="stag">Vercel</span>
+              <span class="stag">Python</span><span class="stag">LangGraph</span>
+              <span class="stag">FastMCP</span><span class="stag">FastAPI</span>
+              <span class="stag">OpenAI API</span><span class="stag">Semgrep</span>
+              <span class="stag">Ruff</span><span class="stag">Prometheus</span>
+              <span class="stag">SQLAlchemy</span><span class="stag">React / TypeScript</span>
+              <span class="stag">Docker Compose</span><span class="stag">pytest</span>
             </div>
             <div class="proj-links">
-              <a href="https://ai-merge-guard.vercel.app" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
-              <a href="https://github.com/pradeep-1111/ai-merge-guard" target="_blank" rel="noopener noreferrer" class="pl">↗ Source Code</a>
-              <a href="https://github.com/pradeep-1111/ai-merge-guard-check" target="_blank" rel="noopener noreferrer" class="pl">↗ Demo Repo</a>
+              <a href="https://ai-merge-guard-agentic.vercel.app" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
+              <a href="https://github.com/pradeep-1111/ai-merge-guard-agentic" target="_blank" rel="noopener noreferrer" class="pl">↗ Source Code</a>
+              <a href="https://github.com/pradeep-1111/ai-merge-guard-check" target="_blank" rel="noopener noreferrer" class="pl">↗ Test Repo</a>
             </div>
           </div>
-          <div class="proj-code-block">
-<span class="cm"># async review pipeline</span>
-<span class="kw">async def</span> <span class="fn">review_pr</span>(event):
-  diff = <span class="kw">await</span> <span class="fn">fetch_diff</span>(event)
-  
-  llm = <span class="kw">await</span> <span class="fn">llm_analyze</span>(diff)
-  sast = <span class="fn">run_semgrep</span>(diff)
-  ast  = <span class="fn">ast_checks</span>(diff)
+          <div class="proj-code-block"><span class="cm"># agentic review: LangGraph + MCP</span>
+g = <span class="fn">StateGraph</span>(ReviewState)
+g.<span class="fn">add_node</span>(<span class="str">"plan"</span>, plan_tools)
+g.<span class="fn">add_node</span>(<span class="str">"run"</span>, mcp_tools)  <span class="cm"># 11</span>
+g.<span class="fn">add_node</span>(<span class="str">"score"</span>, risk_score)
+g.<span class="fn">add_edge</span>(<span class="str">"plan"</span>, <span class="str">"run"</span>)
+g.<span class="fn">add_edge</span>(<span class="str">"run"</span>, <span class="str">"score"</span>)
 
-  <span class="kw">return</span> <span class="fn">merge_findings</span>(
-    llm, sast, ast,
-    severity=<span class="str">"critical"</span>
-  )</div>
+review = g.<span class="fn">compile</span>().<span class="fn">invoke</span>(pr)
+<span class="fn">post_check_run</span>(
+  review.verdict,  <span class="cm"># pass / fail</span>
+  review.inline_fixes
+)</div>
         </div>
       </div>
 
-      <!-- 2 — VULNSCANNER (J&J DIGITAL SOLUTIONS) -->
+      <!-- 3 — VULNSCANNER -->
       <div class="proj-card fi">
-        <div class="proj-badge">🛡️ J&amp;J Digital Solutions · AI/ML Internship · May – Jun 2026</div>
+        <div class="proj-badge">🛡️ J&amp;J Digital Solutions · AI/ML Engineer · Jan – Apr 2026</div>
         <h3 class="proj-title">VulnScanner — AI-Powered Web Vulnerability Scanner (DAST SaaS)</h3>
         <p class="proj-desc">
-          Full-stack, multi-tenant DAST platform with an asynchronous crawl-and-scan engine (FastAPI, httpx) — bounded depth, per-host throttling and concurrency control — running passive checks and benign active probes for reflected XSS, SQL injection, OS command injection, path traversal/LFI, SSTI, open redirect and CRLF injection. A multi-layer SSRF guard validates targets resolve only to public IPs at registration, scan start and every redirect hop, plus a /.well-known ownership-verification gate for authorised testing. A cost-optimised AI reporting pipeline sends only structured findings (never raw response bodies) to the OpenAI API and caches remediation per check type, driving repeat-scan LLM cost to near-zero.
+          Full-stack, multi-tenant DAST platform that crawls a target application, detects 20+ vulnerability classes and generates AI-written executive reports with prioritised remediation plans. An asynchronous crawl-and-scan engine (FastAPI, httpx) with bounded depth, per-host throttling and concurrency control runs passive checks and benign active probes for reflected XSS, SQL injection, OS command injection, path traversal/LFI, SSTI, open redirect and CRLF injection. A multi-layer SSRF guard validates that targets resolve only to public IPs — at registration, scan start and every redirect hop — plus a /.well-known ownership-verification gate for authorised testing. A cost-optimised AI reporting pipeline sends only structured findings (never raw response bodies) to the OpenAI API and caches remediation per check type, driving repeat-scan LLM cost to near zero, with a deterministic fallback when AI is disabled.
         </p>
         <div class="proj-stack">
           <span class="stag">Python</span><span class="stag">FastAPI</span>
-          <span class="stag">httpx</span><span class="stag">PostgreSQL</span>
-          <span class="stag">OpenAI API</span><span class="stag">JWT</span>
-          <span class="stag">Docker Compose</span><span class="stag">Oracle Cloud (OCI)</span>
+          <span class="stag">httpx</span><span class="stag">SQLAlchemy</span>
+          <span class="stag">PostgreSQL</span><span class="stag">OpenAI API</span>
+          <span class="stag">JWT</span><span class="stag">Docker Compose</span>
+          <span class="stag">Oracle Cloud (OCI)</span>
         </div>
         <div class="proj-links">
           <a href="https://vulnscan-pl.duckdns.org" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
@@ -794,12 +883,12 @@ footer{
         </div>
       </div>
 
-      <!-- 3 — CVE SEVERITY TRIAGE (MSc DISSERTATION) -->
+      <!-- 4 — CVE SEVERITY TRIAGE (MSc DISSERTATION) -->
       <div class="proj-card fi">
         <div class="proj-badge">🎓 MSc Dissertation · University of Exeter · Apr – Jul 2026</div>
         <h3 class="proj-title">CVE Severity Triage — ML Classifier + Retrieval-Augmented Explanations</h3>
         <p class="proj-desc">
-          Reproducible pipeline over a ~280K-CVE, ~13:1 class-imbalanced dataset with leakage-free, description-only features and group-stratified splits. Fine-tuned <strong style="color:var(--text);">SecureBERT (~125M params)</strong> for 4-class ordinal severity with inverse-frequency class weighting — <strong style="color:var(--text);">0.68 macro-F1</strong> with balanced per-class recall, beating a TF-IDF + Logistic Regression baseline (0.63). Retrieval-augmented explanation layer over a 266K-CVE FAISS index (hybrid BM25 + dense search via reciprocal rank fusion), temperature-scaled confidence calibration (ECE 0.049 → 0.015), and a curated CWE knowledge base for grounded remediations — turning each prediction into an auditable "why and what to do" for security analysts.
+          Reproducible pipeline over a ~280K-CVE, ~13:1 class-imbalanced dataset with leakage-free, description-only features (excluding CVSS-derived fields) and group-stratified splits to prevent near-duplicate leakage. An NLP feature pipeline normalises CVE descriptions, preserves security-critical tokens (CVE/CWE IDs, version strings, product/vendor names) and applies length-aware truncation to the 512-token context. Fine-tuned <strong style="color:var(--text);">SecureBERT (~125M params)</strong> for 4-class ordinal severity (Low/Medium/High/Critical) with inverse-frequency class weighting — <strong style="color:var(--text);">0.68 macro-F1</strong> with balanced per-class recall, beating a TF-IDF + Logistic Regression baseline (0.63). A retrieval-augmented explanation layer over a 266K-CVE FAISS index (hybrid BM25 + dense search fused via reciprocal rank fusion), temperature-scaled calibration (ECE 0.049 → 0.015) and a curated CWE knowledge base give grounded, non-hallucinated remediations — wrapped in a full-stack tool with multi-format ingestion (CSV/Excel/JSON/TXT), bulk classification and on-demand per-row explanations.
         </p>
         <div class="proj-stack">
           <span class="stag">Python</span><span class="stag">PyTorch</span>
@@ -811,31 +900,40 @@ footer{
         </div>
       </div>
 
-      <!-- 3 — AI TRIAGE -->
-      <div class="proj-card fi">
-        <div class="proj-badge">🧠 LLM-Powered</div>
-        <h3 class="proj-title">AI Vulnerability Triage Application</h3>
-        <p class="proj-desc">
-          AI-enabled SCA &amp; CVE dependency alert analyser built with OpenAI API and Streamlit. Generates structured severity prioritisation, evidence-backed escalation guidance, and remediation recommendations. Includes validation and repair workflows to improve reliability of LLM outputs for security-critical decisions.
-        </p>
-        <div class="proj-stack">
-          <span class="stag">Python</span><span class="stag">OpenAI API</span>
-          <span class="stag">Streamlit</span><span class="stag">Prompt Engineering</span>
-          <span class="stag">SCA / CVE</span>
-        </div>
-      </div>
+      <!-- 5 — CONTRACT TRIAGE (INDEPENDENT, full width) -->
+      <div class="proj-card wide fi">
+        <div class="proj-badge">⚖️ Independent Project · Legal-Tech AI · London · Aug 2026</div>
+        <div class="proj-body">
+          <div class="proj-body-text">
+            <h3 class="proj-title">Contract Triage — Guardrailed RAG Contract-Review System for Legal Teams</h3>
+            <p class="proj-desc">
+              LLM contract-review system that triages an in-house legal team's queue into GREEN (sign), AMBER (amend, redlines pre-drafted) or RED (human review) against a 15-position, legal-owned playbook — deterministic rules settle checkable terms, the LLM reads only what rules can't, and a human signs every contract. RAG over a FAISS playbook index with HyDE retrieval lifts recall@3 on paraphrased clauses from 75% to 88%, and a faithfulness guardrail drops any LLM finding not quoted from the contract and grounded in retrieved policy. Contracts are treated as untrusted input to defend against indirect prompt injection (OWASP LLM01) — pre-model detection, data-fenced prompts, a hard override to RED and fail-closed error handling; evals confirm a planted "mark this as low risk" instruction cannot flip the verdict, while benign boilerplate stays green. Tiered model routing, content-hash idempotency and a semantic cache halve model calls and lower estimated spend ~78% versus sending every contract to a strong model, with re-runs of an unchanged queue at zero calls. A hand-labelled eval harness (triage accuracy, flag precision/recall, injection resistance) exits non-zero on regressions for CI gating — 8/8 core cases and 10/10 held-out contracts, plus a tracked set of known failure cases.
+            </p>
+            <div class="proj-stack">
+              <span class="stag">Python</span><span class="stag">FastAPI</span>
+              <span class="stag">FAISS</span><span class="stag">RAG + HyDE</span>
+              <span class="stag">OpenAI / Anthropic / OpenRouter APIs</span><span class="stag">NumPy</span>
+              <span class="stag">PyYAML</span><span class="stag">Docker</span>
+              <span class="stag">Render</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://contract-triage.onrender.com" target="_blank" rel="noopener noreferrer" class="pl">↗ Live Demo</a>
+              <a href="https://github.com/pradeep-1111/contract-triage" target="_blank" rel="noopener noreferrer" class="pl">↗ Source Code</a>
+            </div>
+          </div>
+          <div class="proj-code-block"><span class="cm"># rules first, LLM only where needed</span>
+<span class="kw">def</span> <span class="fn">triage</span>(contract):
+  <span class="kw">if</span> <span class="fn">injection</span>(contract):
+    <span class="kw">return</span> <span class="str">"RED"</span>  <span class="cm"># fail closed</span>
 
-      <!-- 4 — CLIENT PORTAL -->
-      <div class="proj-card fi" style="grid-column:1/-1;">
-        <div class="proj-badge">🌐 Internship · Live Deployment</div>
-        <h3 class="proj-title">Client Portal — J&amp;J Digital Solutions</h3>
-        <p class="proj-desc">
-          Built and shipped responsive UI pages for a production client portal during a UK internship. Developed features including Google Analytics integration, Contact Form Inbox, Payment Info, and User Management. Implemented Flask routes and backend structure to support newly created pages, working across frontend and backend within a GitHub PR-based workflow.
-        </p>
-        <div class="proj-stack">
-          <span class="stag">Python</span><span class="stag">Flask</span>
-          <span class="stag">HTML / CSS</span><span class="stag">JavaScript</span>
-          <span class="stag">Google Analytics</span><span class="stag">GitHub Flow</span>
+  v = <span class="fn">playbook_rules</span>(contract)
+  <span class="kw">for</span> clause <span class="kw">in</span> v.unresolved:
+    ctx = <span class="fn">hyde_search</span>(clause)
+    f = <span class="fn">llm_review</span>(clause, ctx)
+    v.<span class="fn">add</span>(<span class="fn">grounded</span>(f, contract))
+
+  <span class="cm"># GREEN / AMBER / RED</span>
+  <span class="kw">return</span> v.verdict</div>
         </div>
       </div>
 
@@ -856,21 +954,21 @@ footer{
         <div class="tl-dot on"></div>
         <div class="tl-box">
           <div class="tl-head">
-            <div class="tl-role">AI/ML Engineering Intern</div>
-            <div class="tl-period">Dec 2025 – Present</div>
+            <div class="tl-role">AI/ML Engineer</div>
+            <div class="tl-period">Oct 2025 – Present</div>
           </div>
           <div class="tl-org">J&amp;J Digital Solutions · UK (Remote)</div>
           <ul class="tl-ul">
-            <li>Designed and shipped <strong>three production AI platforms end to end</strong> — RAG systems and AI security tooling — all live with open-source code</li>
-            <li><strong>Customer-Service RAG Chatbot</strong> (Jul 2026): grounded assistant embedded in the company website with two-stage HyDE retrieval, a four-layer output-safety stack, and an SQLite ticket-escalation subsystem</li>
-            <li><strong>VulnScanner</strong> (May – Jun 2026): multi-tenant DAST SaaS detecting 20+ vulnerability classes, with multi-layer SSRF guards, ownership verification, and a cost-optimised AI reporting pipeline</li>
-            <li><strong>AI Merge Guard</strong> (Jan – Feb 2026): GitHub PR review platform combining LLM analysis with Semgrep, Ruff and AST checks, delivered via webhooks, Check Runs and a React/TypeScript dashboard</li>
-            <li>Also built and shipped responsive UI pages and Flask backend routes for the company's production client portal within a GitHub PR-based workflow</li>
+            <li>Designed and shipped <strong>three production AI platforms end to end</strong>, each with a live demo and open-source code — cutting time spent on security assessments and PR reviews by around 85%</li>
+            <li><strong>Customer-Service RAG Chatbot</strong> (May – Sep 2026): grounded assistant embedded in the company website with two-stage HyDE retrieval, a four-layer output-safety stack, and an SQLite ticket-escalation subsystem that turns bot failures into a lead-capture channel</li>
+            <li><strong>VulnScanner</strong> (Jan – Apr 2026): multi-tenant DAST SaaS detecting 20+ vulnerability classes, with a multi-layer SSRF guard, ownership verification, and an AI reporting pipeline that drives repeat-scan LLM cost to near zero through per-check caching</li>
+            <li><strong>AI Merge Guard</strong> (Oct – Dec 2025): agentic GitHub PR reviewer — a LangGraph StateGraph driving 11 analysis tools over the Model Context Protocol (FastMCP), posting risk-scored verdicts, inline suggested fixes and pass/fail check runs</li>
           </ul>
           <div class="tl-pills">
             <span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">Flask</span>
-            <span class="pill">RAG</span><span class="pill">OpenAI API</span><span class="pill">ChromaDB</span>
-            <span class="pill">PostgreSQL</span><span class="pill">Docker</span><span class="pill">GitHub API</span>
+            <span class="pill">LangGraph</span><span class="pill">MCP</span><span class="pill">RAG</span>
+            <span class="pill">OpenAI API</span><span class="pill">ChromaDB</span><span class="pill">PostgreSQL</span>
+            <span class="pill">Docker</span>
           </div>
         </div>
       </div>
@@ -884,8 +982,7 @@ footer{
           </div>
           <div class="tl-org">Surena Management Solutions Pvt. Ltd. · India</div>
           <ul class="tl-ul">
-            <li>Built responsive enterprise UIs using Bootstrap 5, JavaScript, and AJAX for business workflow applications</li>
-            <li>Implemented CRUD-based features and supported front-end integration with backend APIs</li>
+            <li>Delivered responsive enterprise interfaces (Bootstrap 5, JavaScript, AJAX, REST APIs) and CRUD features for core business workflows in a structured team environment</li>
           </ul>
           <div class="tl-pills">
             <span class="pill">Bootstrap 5</span><span class="pill">JavaScript</span>
@@ -903,8 +1000,7 @@ footer{
           </div>
           <div class="tl-org">Saara IT Solutions Pvt. Ltd. · India</div>
           <ul class="tl-ul">
-            <li>Developed an ML classification model to categorise mobile devices by price tier using structured dataset features</li>
-            <li>Applied core ML concepts including data preprocessing, model development, and classification evaluation</li>
+            <li>Built a supervised classification model to segment mobile devices by price tier — preprocessing, feature selection, training and evaluation; first end-to-end ML model delivery</li>
           </ul>
           <div class="tl-pills">
             <span class="pill">Python</span><span class="pill">Machine Learning</span><span class="pill">Classification</span>
@@ -924,10 +1020,11 @@ footer{
       <h2 class="sec-title">Publication</h2>
     </div>
     <div class="pub-card fi">
-      <div class="pub-label">International Journal · December 2024</div>
-      <div class="pub-title">"AI Based Picture Translation"</div>
+      <div class="pub-label">Peer-reviewed · International Journal · December 2024</div>
+      <div class="pub-title">"AI-Based Picture Translation"</div>
       <div class="pub-meta">
         International Journal of Creative Research Thoughts (IJCRT) · Volume 12, Issue 12<br>
+        Peer-reviewed research on AI-driven image translation<br>
         Authors: Annappa Swamy D R, Nishitha, <strong>Pradeep L K</strong>, Rajatesh M D, Sahithi Rai<br>
         Paper ID: IJCRT2412287
       </div>
@@ -951,15 +1048,15 @@ footer{
           <div class="edu-icon">🎓</div>
           <div class="edu-deg">MSc Business Analytics</div>
           <div class="edu-uni">University of Exeter · England, UK</div>
-          <div class="edu-yr">2025 – Present</div>
-          <span class="edu-badge">Current · AI &amp; Analytics Focus</span>
+          <div class="edu-yr">Sep 2025 – Sep 2026</div>
+          <span class="edu-badge">Dissertation · CVE Severity Triage</span>
         </div>
         <div class="edu-card fi">
           <div class="edu-icon">💻</div>
           <div class="edu-deg">B.E. Computer Science &amp; Engineering</div>
           <div class="edu-uni">Mangalore Institute of Technology &amp; Engineering · Karnataka, India</div>
           <div class="edu-yr">2021 – 2025</div>
-          <span class="edu-badge">CGPA: 7.10 · Equivalent to 2:1 (UK)</span>
+          <span class="edu-badge">CGPA: 7.10 · Equivalent to UK 2:1</span>
         </div>
       </div>
 
@@ -977,7 +1074,7 @@ footer{
           <div class="cert-ico">🐍</div>
           <div>
             <div class="cert-name">EX{code} Python Proficiency</div>
-            <div class="cert-iss">Exeter Google Developer Club · 6-week programme</div>
+            <div class="cert-iss">Exeter Google Developer Club</div>
           </div>
         </div>
         <div class="cert-row">
@@ -985,13 +1082,6 @@ footer{
           <div>
             <div class="cert-name">Introduction to Data Science in Python</div>
             <div class="cert-iss">Coursera · University of Michigan</div>
-          </div>
-        </div>
-        <div class="cert-row">
-          <div class="cert-ico">⚡</div>
-          <div>
-            <div class="cert-name">Introduction to Python</div>
-            <div class="cert-iss">365 Data Science</div>
           </div>
         </div>
       </div>
@@ -1008,18 +1098,18 @@ footer{
         <div class="eyebrow">Get In Touch</div>
         <h2 class="contact-hed">Open to the right<br><span>opportunity</span></h2>
         <p class="contact-sub">
-          Looking for AI Engineer, ML Engineer, AI Product Engineer, and Prompt Engineer roles. Available immediately. Based in Exeter, UK — open to remote and hybrid positions.
+          Looking for AI Engineer, ML Engineer, AI Product Engineer, and Prompt Engineer roles. Based in London, UK — open to remote and hybrid positions.
         </p>
-        <a href="mailto:pl563@exeter.ac.uk" class="btn-p" style="display:inline-flex;">✉ Send Email</a>
+        <a href="mailto:pradeeplk587@gmail.com" class="btn-p" style="display:inline-flex;">✉ Send Email</a>
       </div>
       <div class="contact-list fi">
-        <a href="mailto:pl563@exeter.ac.uk" class="c-link">
-          <div class="c-ico">✉</div>
-          <div><div class="c-main">pl563@exeter.ac.uk</div><div class="c-lbl">University Email</div></div>
-        </a>
         <a href="mailto:pradeeplk587@gmail.com" class="c-link">
           <div class="c-ico">📧</div>
           <div><div class="c-main">pradeeplk587@gmail.com</div><div class="c-lbl">Personal Email</div></div>
+        </a>
+        <a href="mailto:pl563@exeter.ac.uk" class="c-link">
+          <div class="c-ico">✉</div>
+          <div><div class="c-main">pl563@exeter.ac.uk</div><div class="c-lbl">University Email</div></div>
         </a>
         <a href="https://linkedin.com/in/pradeep-l-k-aa4425395" target="_blank" class="c-link">
           <div class="c-ico">💼</div>
@@ -1035,7 +1125,7 @@ footer{
 </section>
 
 <footer>
-  <div class="ft">Pradeep Lakkur Kumaraswamy · <span>AI / ML Engineer</span> · Exeter, UK</div>
+  <div class="ft">Pradeep Lakkur Kumaraswamy · <span>AI / ML Engineer</span> · London, UK</div>
   <div class="ft">© 2026</div>
 </footer>
 
@@ -1076,7 +1166,7 @@ for(let i=0;i<75;i++)pts.push(new Pt());
 })();
 
 /* Typing */
-const roles=['AI Engineer','ML Engineer','AI Product Engineer','Prompt Engineer','Full-Stack AI Developer'];
+const roles=['AI Engineer','LLM Application Engineer','Agentic AI Engineer','ML Engineer','AI Product Engineer'];
 let ri=0,ci=0,del=false;
 const tel=document.getElementById('typed');
 function type(){
